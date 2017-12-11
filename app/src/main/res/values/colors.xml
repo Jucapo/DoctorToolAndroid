@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <color name="colorPrimary">#039be5</color>
+        <color name="colorPrimaryDark">#006db3</color>
+        <color name="colorAccent">#387002</color>
+        <color name="white">#fff</color>
+        <color name="tabtextselect">#b3d295</color>
+        <color name="btnRegister">#c4f198</color>
+
+
+</resources>

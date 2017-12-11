@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "268697170220",
+    "firebase_url": "https://doctortool-c9082.firebaseio.com",
+    "project_id": "doctortool-c9082",
+    "storage_bucket": "doctortool-c9082.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268697170220:android:591be79534737bb4",
+        "android_client_info": {
+          "package_name": "com.example.intel.doctortool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268697170220-3n1n57jdav5uj9gopa2553fn9i2g70vt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.intel.doctortool",
+            "certificate_hash": "c194856d0c3c34f4e542b161f37efaa995002eab"
+          }
+        },
+        {
+          "client_id": "268697170220-22v2buiuj1k0t2q1bvu5drf3cdv1d4v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAarZtNJaclPUsQXla16-iDAWlgtWdpvyI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "268697170220-22v2buiuj1k0t2q1bvu5drf3cdv1d4v9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleSize">30dp</dimen>
+    <dimen name="btnLogin">20dp</dimen>
+    <dimen name="Title">50dp</dimen>
+    <dimen name="FormulaTitle">28dp</dimen>
+</resources>

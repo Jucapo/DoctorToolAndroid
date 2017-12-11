@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">DoctorTool</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="userName">Name</string>
+
+    <string name="registroOK">Se ha registrado corectamente</string>
+    <string name="registroERROR">Ha ocurrido un Error en el Registro</string>
+
+    <string name="LoginError">Error al iniciar Sesion</string>
+
+
+    <string name="tittleDoctorTool">DoctorTool</string>
+    <string name="btnLogin">LogIn</string>
+    <string name="btnRegister">Register</string>
+    <string name="btnRegistro">Registrarse</string>
+    <string name="acronimoFormula">acronimo</string>
+    <string name="nombreFormula">Nombre</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="peso">Peso[Kg]</string>
+    <string name="Altura">Altura[cm]</string>
+    <string name="caluclar">Calcular</string>
+    <string name="ASC">Area Superficie Corporal</string>
+
+</resources>
