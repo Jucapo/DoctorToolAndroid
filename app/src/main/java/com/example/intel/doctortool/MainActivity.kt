@@ -22,17 +22,15 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar_main)
 
         pagerAdapter = CustomPagerAdapter(supportFragmentManager)
+        pagerAdapter!!.addFragments(TodasFragment(),"Todas")
         pagerAdapter!!.addFragments(FavoritosFragment(),"Favoritos")
         pagerAdapter!!.addFragments(RecientesFragment(),"Recientes")
         pagerAdapter!!.addFragments(EspecialidadFragment(),"Especialidad")
-        pagerAdapter!!.addFragments(TodasFragment(),"Todas")
 
         //addding  pageadapter to viewpager
 
         customViewPager.adapter = pagerAdapter
         customTabLayout.setupWithViewPager(customViewPager)
-
-
 
 
     }
