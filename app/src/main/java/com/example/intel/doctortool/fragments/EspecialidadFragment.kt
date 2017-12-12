@@ -18,5 +18,8 @@ class EspecialidadFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_especialidad, container, false)
     }
+    companion object {
+        fun instance():EspecialidadFragment = EspecialidadFragment()
+    }
 
 }// Required empty public constructor

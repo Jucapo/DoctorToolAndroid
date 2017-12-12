@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_todas"
+        android:icon="@drawable/ic_todas"
+        android:title="@string/title_todas"
+        android:iconTint="@color/colorAccent"
+        />
+
+    <item
+        android:id="@+id/navigation_recientes"
+        android:icon="@drawable/ic_recientes"
+        android:title="@string/title_recientes"
+        android:iconTint="@color/colorAccent"
+        />
+
+    <item
+        android:id="@+id/navigation_especialidad"
+        android:icon="@drawable/ic_especialidad"
+        android:title="@string/title_especialidad"
+        android:iconTint="@color/colorAccent"
+        />
+
+</menu>

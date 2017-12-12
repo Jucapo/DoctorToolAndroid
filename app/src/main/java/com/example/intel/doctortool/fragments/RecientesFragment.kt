@@ -22,4 +22,8 @@ class RecientesFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_recientes, container, false)
     }
 
+    companion object {
+        fun instance():RecientesFragment = RecientesFragment()
+    }
+
 }// Required empty public constructor

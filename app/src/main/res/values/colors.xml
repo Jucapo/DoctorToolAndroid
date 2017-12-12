@@ -3,10 +3,12 @@
 
         <color name="colorPrimary">#039be5</color>
         <color name="colorPrimaryDark">#006db3</color>
-        <color name="colorAccent">#387002</color>
+        <color name="colorSecundary">#9E9E9E</color>
+        <color name="colorHeader">#757575</color>
+        <color name="colorAccent">#212121</color>
         <color name="white">#fff</color>
         <color name="tabtextselect">#b3d295</color>
-        <color name="btnRegister">#c4f198</color>
+        <color name="btnRegister">#f5a559</color>
 
 
 </resources>

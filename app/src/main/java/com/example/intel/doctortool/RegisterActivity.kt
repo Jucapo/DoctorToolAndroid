@@ -37,7 +37,7 @@ class RegisterActivity : AppCompatActivity() {
                 ?.addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         toast(R.string.registroOK)
-                        val intent = Intent(this, MainActivity::class.java)
+                        val intent = Intent(this, LoginActivity::class.java)
                         startActivity(intent)
                         finish()
                         val user = mAuth?.getCurrentUser()

@@ -36,15 +36,19 @@
 
                 <TextView
                     android:id="@+id/acronimoFormula"
-                    android:layout_width="199dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="16dp"
                     android:text="@{formula.acronimo}"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/icoFormula"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:text="ASC" />
+                    tools:text="ASC"
+                    android:gravity=""
+                    />
 
                 <TextView
                     android:id="@+id/nombreFormula"
@@ -77,18 +81,6 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@color/colorPrimary" />
 
-                <ImageButton
-                    android:id="@+id/btnFav"
-                    android:layout_width="36dp"
-                    android:layout_height="33dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginTop="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/nombreFormula"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="1.0"
-                    app:srcCompat="@android:drawable/btn_star_big_off" />
             </android.support.constraint.ConstraintLayout>
         </android.support.v7.widget.CardView>
     </android.support.constraint.ConstraintLayout>

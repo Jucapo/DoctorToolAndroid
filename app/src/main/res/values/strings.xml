@@ -9,7 +9,6 @@
 
     <string name="LoginError">Error al iniciar Sesion</string>
 
-
     <string name="tittleDoctorTool">DoctorTool</string>
     <string name="btnLogin">LogIn</string>
     <string name="btnRegister">Register</string>
@@ -17,11 +16,27 @@
     <string name="acronimoFormula">acronimo</string>
     <string name="nombreFormula">Nombre</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="peso">Peso[Kg]</string>
     <string name="Altura">Altura[cm]</string>
     <string name="caluclar">Calcular</string>
     <string name="ASC">Area Superficie Corporal</string>
+    <string name="title_activity_bottom_navigation">bottomNavigationActivity</string>
+    <string name="title_recientes">Recientes</string>
+    <string name="title_todas">Todas</string>
+    <string name="title_especialidad">Especialidad</string>
+    <string name="home">Inicio</string>
+    <string name="Perfil">Editar Perfil</string>
+    <string name="configuraciones">Configuraciones</string>
+    <string name="profile">Perfil</string>
+    <string name="logut">Cerrar Sesión</string>
+    <string name="open_menu">Perfil</string>
+    <string name="close_menu">Formulas</string>
+    <string name="btnGuardarPerfil">Guardar Perfil</string>
+    <string name="editPrefil">Editar Perfil</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="edad">Edad</string>
+    <string name="registro">Registrate en DoctorTool</string>
 
 </resources>

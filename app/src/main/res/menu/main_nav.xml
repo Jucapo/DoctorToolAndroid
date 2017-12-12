@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/nav_home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"
+        />
+
+    <item android:id="@+id/nav_perfil"
+        android:title="@string/Perfil"
+        android:icon="@drawable/ic_perfil"
+        />
+
+    <item android:id="@+id/nav_configuraciones"
+        android:title="@string/configuraciones"
+        android:icon="@drawable/ic_configuraciones"
+        />
+
+
+    <item android:title="@string/profile">
+        <menu>
+            <item android:id="@+id/nav_logut"
+                android:title="@string/logut"
+                android:icon="@drawable/ic_cerrar"
+                />
+        </menu>
+    </item>
+
+</menu>
