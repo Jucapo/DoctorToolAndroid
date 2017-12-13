@@ -30,7 +30,11 @@ class RegisterActivity : AppCompatActivity() {
      val email = emailRegister.text.toString()
      val pass  = passRegister.text.toString()
 
-     RegistroFirebase(email,pass)
+     if (email=="" || pass==""){
+         toast(getString(R.string.errorCampos))
+     }
+     else
+        RegistroFirebase(email,pass)
  }
 
     fun RegistroFirebase (email:String , password:String){

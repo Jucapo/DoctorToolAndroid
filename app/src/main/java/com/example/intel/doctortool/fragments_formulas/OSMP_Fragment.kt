@@ -27,12 +27,21 @@ class OSMP_Fragment : Fragment() {
     }
 
     fun calcular(view: View){
-        val na =  pesoASC.text.toString().toDouble()
-        val glu =  alturaASC.text.toString().toDouble()
-        val bun =  bunOSMP.text.toString().toDouble()
-        val result  = 2*na +(glu/18)  +(bun/2.8)
-        val res = String.format("%.4f", result)
-        resultadoOSMP.text = "OSMP = $res"
+        val naR =  pesoASC.text.toString()
+        val gluR =  alturaASC.text.toString()
+        val bunR =  bunOSMP.text.toString()
+
+        if(naR=="" ||  gluR=="" || bunR==""){
+            resultadoOSMP.text = getString(R.string.errorCampos)
+        }
+        else {
+            val na = pesoASC.text.toString().toDouble()
+            val glu = alturaASC.text.toString().toDouble()
+            val bun = bunOSMP.text.toString().toDouble()
+            val result = 2 * na + (glu / 18) + (bun / 2.8)
+            val res = String.format("%.4f", result)
+            resultadoOSMP.text = "OSMP = $res"
+        }
     }
 
 

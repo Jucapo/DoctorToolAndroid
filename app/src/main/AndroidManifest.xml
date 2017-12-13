@@ -26,7 +26,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".bottomNavigationActivity"
-            android:label="@string/title_activity_bottom_navigation" />
+             />
         <activity android:name=".EditarPerfilActivity" />
         <activity android:name=".Configuraciones_Activity"></activity>
     </application>

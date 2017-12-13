@@ -38,7 +38,12 @@ class LoginActivity : AppCompatActivity() {
     fun login(view: View){
         val email = emailLogin.text.toString()
         val pass  = passLogin.text.toString()
-        LoginFirebase(email,pass)
+
+        if (email=="" || pass==""){
+            toast(getString(R.string.errorCampos))
+        }
+        else
+            LoginFirebase(email,pass)
     }
 
     fun LoginFirebase (email:String , password:String){
@@ -46,8 +51,7 @@ class LoginActivity : AppCompatActivity() {
         ?.addOnCompleteListener(this) { task ->
             if (task.isSuccessful) {
                 preferences.edit().putBoolean("logged", true).apply()
-                val intent = Intent(this, bottomNavigationActivity::class.java)
-                startActivity(intent)
+                startActivity<bottomNavigationActivity>()
                 finish()
             } else {
                 toast(R.string.LoginError)

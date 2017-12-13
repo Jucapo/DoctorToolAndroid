@@ -66,5 +66,7 @@
     <string name="VST">Volumen Total Sanguineo</string>
     <string name="PAC">Porcentaje de Agua Corporal</string>
     <string name="LEE">Indice de pronostico LEE</string>
+    <string name="ErrorCampos">Debe Ingresar Valores</string>
+    <string name="errorCampos">Debe Ingresar Valores</string>
 
 </resources>

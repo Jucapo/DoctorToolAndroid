@@ -67,8 +67,13 @@ class bottomNavigationActivity : AppCompatActivity(), DrawerLayout.DrawerListene
                 val espe = post?.especialidad
                 val nombre = post?.nombre
                 val apellidos = post?.apellidos
-                nombreCText.text = "$nombre $apellidos"
-                espePerfilText.text = espe
+                if(nombre ==null || apellidos == null || espe==null){
+                    nombreCText.text = "¡¡Crea tu perfil ahora!! =)"
+                }
+                else {
+                    nombreCText.text = "$nombre $apellidos"
+                    espePerfilText.text = espe
+                }
             }
         })
 

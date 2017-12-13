@@ -23,11 +23,20 @@ class ASC_Fragment : Fragment() {
     }
 
     fun calcular(view: View){
-        val p =  pesoASC.text.toString().toDouble()
-        val a =  alturaASC.text.toString().toDouble()
-        val result  = Math.sqrt(a*p)/60
-        val res = String.format("%.3f", result)
-        resultadoASC.text = "ASC = $res metros"
+
+        val pr =  pesoASC.text.toString()
+        val ar =  alturaASC.text.toString()
+
+        if (pr =="" || ar == ""){
+            resultadoASC.text = getString(R.string.errorCampos)
+        }
+        else {
+            val p = pesoASC.text.toString().toDouble()
+            val a = alturaASC.text.toString().toDouble()
+            val result = Math.sqrt(a * p) / 60
+            val res = String.format("%.3f", result)
+            resultadoASC.text = "ASC = $res metros"
+        }
     }
 
     companion object {

@@ -26,11 +26,20 @@ class IMC_Fragment : Fragment() {
     }
 
     fun calcular(view: View){
-        val p =  pesoASC.text.toString().toDouble()
-        val a =  alturaASC.text.toString().toDouble()
-        val result  = p / (a*a)
-        val res = String.format("%.3f", result)
-        resultadoIMC.text = "IMC = $res"
+
+        val pr =  pesoASC.text.toString()
+        val ar =  alturaASC.text.toString()
+
+        if (pr=="" || ar==""){
+            resultadoIMC.text = getString(R.string.errorCampos)
+        }
+        else {
+            val p = pesoASC.text.toString().toDouble()
+            val a = alturaASC.text.toString().toDouble()
+            val result = p / (a * a)
+            val res = String.format("%.3f", result)
+            resultadoIMC.text = "IMC = $res"
+        }
     }
 
     companion object {
