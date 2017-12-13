@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="especialidades_array">
+        <item>General</item>
+        <item>Anestesiologia</item>
+        <item>Cirugia General</item>
+        <item>Ginecoostetricia</item>
+        <item>Medicina Interna</item>
+        <item>Pediatria</item>
+    </string-array>
+
+</resources>

@@ -1,13 +1,41 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.intel.doctortool.fragments_formulas.VST_Fragment">
+    tools:context="com.example.intel.doctortool.fragments_formulas.ASC_Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/calculaVTS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="148dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/caluclar"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleVTS" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/titleVTS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="@string/VST"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/FormulaTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="NombreFormula" />
 
-</FrameLayout>
+</android.support.constraint.ConstraintLayout>

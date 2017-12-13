@@ -1,13 +1,19 @@
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.intel.doctortool.fragments_formulas.ASC_Fragment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        />
 
     <Button
-        android:id="@+id/ascCalcular"
+        android:id="@+id/calculaPSE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -19,10 +25,11 @@
         android:textSize="@dimen/btnLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ascAltura" />
+        app:layout_constraintTop_toBottomOf="@+id/alturaASC"
+        />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/titlePSE"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -39,7 +46,7 @@
         />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iamgenASC"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -48,52 +55,51 @@
         android:src="@mipmap/asc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/titlePSE"
+        />
 
     <EditText
-        android:id="@+id/ascPeso"
+        android:id="@+id/pesoASC"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="@string/peso"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        android:gravity="center"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/iamgenASC" />
 
     <EditText
-        android:id="@+id/ascAltura"
+        android:id="@+id/alturaASC"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="@string/Altura"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ascPeso"
-        android:gravity="center"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/pesoASC" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="0dp"
+        android:id="@+id/resultadoASC"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/resultado"
         android:textSize="@dimen/titleSize"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ascCalcular"
-        tools:text="00"
-        android:gravity="center"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/calculaPSE" />
+
 </android.support.constraint.ConstraintLayout>

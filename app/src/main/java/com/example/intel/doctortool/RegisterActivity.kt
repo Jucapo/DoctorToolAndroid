@@ -18,8 +18,10 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         mAuth = FirebaseAuth.getInstance()
-
         btnRegister2.setOnClickListener(this::registro)
+
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
     }
 
@@ -34,21 +36,32 @@ class RegisterActivity : AppCompatActivity() {
     fun RegistroFirebase (email:String , password:String){
 
         mAuth?.createUserWithEmailAndPassword(email, password)
-                ?.addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful) {
-                        toast(R.string.registroOK)
-                        val intent = Intent(this, LoginActivity::class.java)
-                        startActivity(intent)
-                        finish()
-                        val user = mAuth?.getCurrentUser()
-                    } else {
-                        toast(R.string.registroERROR)
-                        emailRegister.setText("")
-                        passRegister.setText("")
-                    }
+            ?.addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    toast(R.string.registroOK)
+                    val intent = Intent(this, LoginActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                    val user = mAuth?.getCurrentUser()
+                } else {
+                    toast(R.string.registroERROR)
+                    emailRegister.setText("")
+                    passRegister.setText("")
                 }
+            }
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 
     }
 

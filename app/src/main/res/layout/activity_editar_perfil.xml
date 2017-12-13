@@ -8,15 +8,17 @@
 
     <Button
         android:id="@+id/btnGuardarPerfil"
-        android:layout_width="wrap_content"
+        android:layout_width="154dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimary"
         android:text="@string/btnGuardarPerfil"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edadText" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
     <TextView
         android:id="@+id/tittleeditar"
@@ -37,52 +39,69 @@
 
     <EditText
         android:id="@+id/nombreText"
-        android:layout_width="wrap_content"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="@string/nombre"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tittleeditar"
         tools:text="Nombre"
-        android:gravity="center"
-        />
+        android:textColor="@color/colorPrimary"/>
 
     <EditText
         android:id="@+id/apellidosText"
-        android:layout_width="wrap_content"
+        android:layout_width="281dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="@string/apellidos"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombreText"
         tools:text="Apellidos"
-        android:gravity="center"
-        />
+        android:textColor="@color/colorPrimary"/>
 
     <EditText
         android:id="@+id/edadText"
-        android:layout_width="wrap_content"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="@string/edad"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/apellidosText"
         tools:text="Edad"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="279dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edadText"
+        android:textColor="@color/colorPrimary"
         android:gravity="center"
         />
 

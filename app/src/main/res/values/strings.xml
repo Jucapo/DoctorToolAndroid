@@ -7,6 +7,9 @@
     <string name="registroOK">Se ha registrado corectamente</string>
     <string name="registroERROR">Ha ocurrido un Error en el Registro</string>
 
+    <string name="perfilOK">Perfil creado correctamente</string>
+    <string name="perfilError">Error al Crear perfil</string>
+
     <string name="LoginError">Error al iniciar Sesion</string>
 
     <string name="tittleDoctorTool">DoctorTool</string>
@@ -38,5 +41,30 @@
     <string name="apellidos">Apellidos</string>
     <string name="edad">Edad</string>
     <string name="registro">Registrate en DoctorTool</string>
+    <string name="resultado">00</string>
+    <string name="IMC">Indice de Masa Coorporal</string>
+    <string name="alturaM">Altura[m]</string>
+    <string name="OSMP">Osmolaridad Plasmatica</string>
+    <string name="na">NA</string>
+    <string name="but">BUT</string>
+    <string name="glucosa">GLUCOSA</string>
+    <string name="bun">BUN</string>
+    <string name="fum">FUM</string>
+    <string name="edad_gestional">Edad Gestional</string>
+    <string name="Sonido">Sonido</string>
+    <string name="Brillo">Brillo</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="configuracionesT">CONFIGURACIONES</string>
+    <string name="FPP">Fecha Propable de Parto</string>
+    <string name="GUPTA">Riesgo Cardico Preoperatorio</string>
+    <string name="timepo">Tiempo(Horas)</string>
+    <string name="Holliday">Calculo de Liquidos</string>
+    <string name="PPT">Percentil Peso y Talla</string>
+    <string name="PSE">Calculo de Peso segun la Edad</string>
+    <string name="PSP">Pesdidas Sanguineas Permisibles</string>
+    <string name="TFG">Tasa de filtracion Glomerural</string>
+    <string name="VST">Volumen Total Sanguineo</string>
+    <string name="PAC">Porcentaje de Agua Corporal</string>
+    <string name="LEE">Indice de pronostico LEE</string>
 
 </resources>
