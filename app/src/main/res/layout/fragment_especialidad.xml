@@ -1,19 +1,36 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.intel.doctortool.fragments.EspecialidadFragment">
 
 
     <TextView
+        android:gravity="center"
+        android:text="Especialidad"
         android:id="@+id/especialidadText"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="Pagina de Espacialidad"
-        android:textSize="28dp" />
+        android:layout_height="50dp"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        />
 
 
 
-</FrameLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listEspecialidad"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        tools:layout_editor_absoluteY="49dp"
+        tools:listitem="@layout/template_formula"
+        android:layout_gravity="bottom"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</LinearLayout>
+

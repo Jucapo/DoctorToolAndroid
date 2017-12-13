@@ -34,7 +34,6 @@ class FormulaAdapter(val callback:(pos:Int)->Unit):RecyclerView.Adapter<FormulaV
     override fun getItemCount(): Int = data.size
 
 
-
 }
 
 class FormulaViewHolder(view:View):RecyclerView.ViewHolder(view){

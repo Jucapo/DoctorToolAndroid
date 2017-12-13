@@ -34,7 +34,7 @@ class EditarPerfilActivity : AppCompatActivity() {
         var nombre = nombreText.text.toString()
         var apellidos = apellidosText.text.toString()
         var edad =  edadText.text.toString()
-        var especialidad =  "Anesteciologia"
+        var especialidad =  "General"
         val ref = FirebaseDatabase.getInstance().getReference("Perfil")
         val perfilId = ref.push().key
         val perfil = perfil(perfilId,nombre,apellidos,edad,especialidad)
@@ -56,7 +56,7 @@ class EditarPerfilActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         super.onBackPressed()
-        val intent = Intent(this, LoginActivity::class.java)
+        val intent = Intent(this, bottomNavigationActivity::class.java)
         startActivity(intent)
         finish()
     }
