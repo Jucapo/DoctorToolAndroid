@@ -1,5 +1,4 @@
 package com.example.intel.doctortool
-
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -11,7 +10,14 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.view.MenuItem
 import android.view.View
 import com.example.intel.doctortool.fragments.*
+import com.example.intel.doctortool.models.perfil
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import kotlinx.android.synthetic.main.activity_bottom_navigation.*
+
+import kotlinx.android.synthetic.main.nav_head.*
 
 class bottomNavigationActivity : AppCompatActivity(), DrawerLayout.DrawerListener {
 
@@ -49,6 +55,22 @@ class bottomNavigationActivity : AppCompatActivity(), DrawerLayout.DrawerListene
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         drawer.addDrawerListener(this)
         nav.setNavigationItemSelectedListener { setContent(it) }
+
+        val ref = FirebaseDatabase.getInstance().getReference("Perfil")
+        ref.addValueEventListener(object : ValueEventListener {
+
+            override fun onCancelled(p0: DatabaseError?) {
+
+            }
+            override fun onDataChange(p0: DataSnapshot?) {
+                val post = p0?.getValue(perfil::class.java)
+                val espe = post?.especialidad
+                val nombre = post?.nombre
+                val apellidos = post?.apellidos
+                nombreCText.text = "$nombre $apellidos"
+                espePerfilText.text = espe
+            }
+        })
 
 
     }
